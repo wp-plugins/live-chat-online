@@ -1,0 +1,33 @@
+.livechats_container{position: fixed;right: 40px;bottom: 0;z-index:100000;width: 314px;font-family: Helvetica, Arial, Courier, sans-serif;height: 40px;overflow: hidden;border:7px solid #bc392b;-moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);-webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);-moz-border-radius: 10px 10px 0 0;-webkit-border-radius: 10px 10px 0 0;border-radius: 10px 10px 0 0}
+.livechats_title{float:left;width: 280px;height: 40px;line-height: 40px;position: relative;padding: 0 10px;font-size: 15px;font-weight: bold;box-sizing: content-box;background: #bc392b;color:#FFF;}
+.livechats_title .livechats_text{float:left;}
+.livechats_title .livechats_btn{float:right;width: 31px;height: 24px;border: 1px solid #DADAD9;margin: 7px 0 0 0;text-align: center;line-height: 26px;font-weight: bold;font-size: 20px;cursor: pointer;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;background: #8a2d24 url('ar_top.png') center no-repeat;}
+.livechats_btn_finish{float: right;height: 24px;line-height: 24px;color:#FFF;font-size: 12px;margin: 7px -10px 0 10px;padding: 0 15px;cursor: pointer;box-sizing: content-box;visibility: hidden;border: 1px solid #DADAD9;background: #8a2d24 url(close.png) center no-repeat;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;}
+.active .livechats_btn_finish{visibility: visible;}
+.active .livechats_title .livechats_btn{background-image: url('ar_bottom.png');}
+.livechats_body{float: left;width: 280px;height: 220px;padding: 10px;overflow: auto;box-sizing: content-box;background: #FFF;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;}
+.livechats_message{float:left;width: 100%;min-height: 36px;font-size: 12px;padding: 5px 0;border-bottom: 2px solid #F2F2F2;}
+.livechats_message .livechats_name{float:left;font-weight: bold;height: 16px;line-height: 16px;font-size: 13px;}
+.livechats_message.message_type_0 .livechats_name{color: #000;}
+.livechats_message.message_type_1 .livechats_name{color:#bc392b;}
+.livechats_message .livechats_time{float:right;height: 16px;line-height: 16px;font-size: 10px;color: #909090;}
+.livechats_message .livechats_text{float:left;width: 100%;word-wrap: break-word;}
+.livechats_message:first-child{background: url(support_icon.png) right top no-repeat}
+.livechats_write{ float: left;width: 100%;background: #FFF;}
+.livechats_top_write{float:left;width: 100%;height: 20px;background: #bc392b;border-top: 1px solid #D3D3D2;border-bottom: 1px solid #D3D3D2;}
+.livechats_preloader{float:right;height: 18px;width: 18px;margin: 0;background: url(preloader.gif) center no-repeat;visibility: hidden;}
+.loading .livechats_preloader{visibility: visible;}
+.livechats_middle_write{float:left;width: 100%;height: 60px;position: relative;}
+.livechats_middle_write textarea{float:left;margin: 0;padding: 5px;width: 290px;height: 48px;border: none !important;background: #FFF;font-size: 12px;resize: none;box-sizing: content-box;font-family: inherit;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;}
+.livechats_btn_enter{position: absolute;z-index: 10;right: 10px;bottom: 10px;cursor: pointer;width: 15px;height: 13px;background: url(send.png) center no-repeat;}
+.livechats_middle_write textarea::-webkit-input-placeholder{opacity: 0.7; transition: opacity 0.3s ease;}
+.livechats_middle_write textarea::-moz-placeholder{opacity: 0.7; transition: opacity 0.3s ease;}
+.livechats_middle_write textarea:-moz-placeholder{opacity: 0.7; transition: opacity 0.3s ease;}
+.livechats_middle_write textarea:-moz-placeholder{opacity: 0.7; transition: opacity 0.3s ease;}
+.livechats_middle_write textarea:focus::-webkit-input-placeholder{opacity: 0; transition: opacity 0.3s ease;}
+.livechats_middle_write textarea:focus::-moz-placeholder{opacity: 0; transition: opacity 0.3s ease;}
+.livechats_middle_write textarea:focus:-moz-placeholder{opacity: 0; transition: opacity 0.3s ease;}
+.livechats_middle_write textarea:focus:-ms-input-placeholder{opacity: 0; transition: opacity 0.3s ease;}
+.livechats_bottom_write{float:left;width: 100%;color:#FFF;height: 20px;text-align: center;font-size: 12px;line-height: 20px;background: #bc392b;border-top: 1px solid #D3D3D2;border-bottom: 1px solid #D3D3D2;}
+.livechats_bottom_write a{color:#FFF;text-decoration: none;}
+.livechats_bottom_write a:hover{text-decoration: underline}
