@@ -3,7 +3,7 @@
 Plugin Name: Live Chat Online
 Plugin URI: http://www.realtime-chat.com
 Description: Live Chat Online
-Version: 1.0
+Version: 1.0.0
 Author: realtime-chat.com
 Author URI: http://www.realtime-chat.com
 */
@@ -304,7 +304,7 @@ if ( ! class_exists( 'LiveChats' ) ) {
         public static $siteSecureAction = 'http://secure.realtime-chat.com/from-plugin';
 
         public static $plugin_name      = 'live-chats';
-        public static $plugin_version   = '1.0';
+        public static $plugin_version   = '1.0.0';
         public static $optionKey        = 'live-chats_key'; //name for key in options
         public static $personalKey      = '';               //current key of plugin
 
