@@ -34,7 +34,10 @@ Install it for free today and chat with website users!
 
 == Frequently Asked Questions ==
 
-FAQ
+Is the multilingual users interface for this chat widget supported?
+
+This chat plugin (chat widget) also support multilingual users interface for visitors of your website and for chat operators.
+
 
 == Changelog ==
 
