@@ -1,0 +1,35 @@
+#livechats_settings_page{float:left;width: 100%;background: #fff;padding: 10px 10px;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+#livechats_settings_page .form-table{min-width: 440px;}
+#livechats_settings_page .form-table th, #livechats_settings_page .form-table td{padding-top: 5px;padding-bottom: 5px;}
+#livechats_settings_page .form-table th{line-height: 28px;padding-left: 5px;}
+#livechats_settings_page .form-table td{padding-right: 5px;}
+#livechats_settings_page .tab{float:left;padding: 2px 0;background: #f6ffff;margin: 0 20px 30px 0;border:2px solid #ccc;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;}
+#livechats_settings_page p.submit{float: left;width: 100%;padding: 0;}
+#livechats_settings_page .row_title{background: #92bae5;}
+#livechats_settings_page .row_title th{font-size: 16px;text-align: center;}
+#livechats_settings_page .row_border td{height: 1px;line-height: 1px;padding: 0;border-bottom:1px solid #23282D;}
+#livechats_settings_page input{float: right;}
+#livechats_settings_page textarea{float: right;}
+#livechats_settings_page select{float: right;}
+#livechats_settings_page textarea{width: 185px;height: 50px;}
+#livechats_settings_page #livechats_auth_tab{background: #f2f6e1;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+#livechats_settings_page #livechats_auth_tab .row_title{background: #b4b8a3;}
+#livechats_settings_page #livechats_auth_tab th span{float:left;height:28px;line-height: 28px;}
+#livechats_settings_page #livechats_auth_tab input[readonly]{background: #ddd !important;}
+#livechats_settings_page #livechats_template_tab{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+#livechats_settings_page #livechats_template_tab input, #livechats_settings_page #livechats_template_tab select{float:left;}
+#livechats_settings_page .minicolors-panel{top:28px;}
+#livechats_settings_page #submit{float:left;font-weight: bold;}
+#livechats_settings_page .registration_block{float:left;width: 100%;}
+#livechats_settings_page .registration_block .block{float:left;width:100%;margin: 0 50px 0 0;padding: 0 0 10px 0;}
+#livechats_settings_page .registration_block .block_label{float: left;font-weight: bold;line-height: 28px;padding: 0 10px 0 0;width:150px;}
+#livechats_settings_page .registration_block .block_input{float: left;}
+#livechats_settings_page .registration_block .block_input input{float:left;}
+#livechats_settings_page .full_td_desc{float:left;width: 370px;border-left: 1px solid #000;padding: 0 10px;}
+#livechats_settings_page #register_but{float:left !important;width:185px;-moz-box-shadow:inset 0px 1px 0px 0px #fff6af;-webkit-box-shadow:inset 0px 1px 0px 0px #fff6af;box-shadow:inset 0px 1px 0px 0px #fff6af;background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e6d357), color-stop(1, #ba7c18));
+    background:-moz-linear-gradient(top, #e6d357 5%, #ba7c18 100%);background:-webkit-linear-gradient(top, #e6d357 5%, #ba7c18 100%);background:-o-linear-gradient(top, #e6d357 5%, #ba7c18 100%);background:-ms-linear-gradient(top, #e6d357 5%, #ba7c18 100%);
+    background:linear-gradient(to bottom, #e6d357 5%, #ba7c18 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6d357', endColorstr='#ba7c18',GradientType=0);background-color:#e6d357;-moz-border-radius:6px;-webkit-border-radius:6px;
+    border-radius:6px;border:1px solid #cc851a;display:inline-block;cursor:pointer;color:#faf7fa;font-family:Arial, sans-serif;font-size:16px;font-weight:bold;padding:10px 18px;text-decoration:none;}
+#livechats_settings_page #register_but:hover{text-decoration: underline;}
+#livechats_settings_page #register_but:active{position:relative;top:1px;}
+.livechats_answer_msg{float:left;width: 100%;padding: 10px;font-size: 18px;font-weight: bold;border: 2px solid #ff9aa9;background: #ffc8cf;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
