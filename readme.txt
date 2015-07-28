@@ -1,6 +1,6 @@
 === Live Chat Online ===
 Plugin Name: Live Chat Online
-Version: 1.1.0
+Version: 1.1.1
 Donate link: http://www.realtime-chat.com/donate
 URI: www.realtime-chat.com
 Tags: chat, Online, Live, Online chat, Live Chat, widget chat, online live chat, web chat, tools
@@ -37,6 +37,9 @@ Install it for free today and chat with website users!
 FAQ
 
 == Changelog ==
+
+= Live Chat & Online Chat - simple Communication with Customers. (Chats version 1.1.1) =
+* Was improved creation of table for log of messages.
 
 = Live Chat & Online Chat - simple Communication with Customers. (Chats version 1.1.0) =
 * To Live Chat was added page with settings (authorization settings, colors settings, texts settings, template settings).

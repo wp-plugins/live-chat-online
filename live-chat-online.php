@@ -3,7 +3,7 @@
 Plugin Name: Live Chat Online
 Plugin URI: http://www.realtime-chat.com
 Description: Live Chat Online
-Version: 1.1.0
+Version: 1.1.1
 Author: realtime-chat.com
 Author URI: http://www.realtime-chat.com
 */
@@ -13,7 +13,7 @@ defined( 'ABSPATH' ) or die( 'Hacking attempt!' );
 if ( ! class_exists( 'LiveChats' ) ) {
     class LiveChats
     {
-        public static $table_prefix     = 'live-chats_';
+        public static $table_prefix     = 'livechats_';
         public static $optionParameters = 'live-chats_options';
         public static $cookiePrefix     = 'live-chats_hash';
         public static $tag_prefix       = 'livechats';
@@ -664,34 +664,35 @@ if ( ! class_exists( 'LiveChats' ) ) {
             global $wpdb;
 
             // Get the correct character collate
-            $charset_collate = 'utf8';
-            if ( ! empty( $wpdb->charset ) ) {$charset_collate = "DEFAULT CHARACTER SET $wpdb->charset";}
-            if ( ! empty( $wpdb->collate ) ) {$charset_collate .= " COLLATE $wpdb->collate";}
+            $charset_collate = 'DEFAULT CHARACTER SET=utf8';
+            if ( ! empty( $wpdb->charset ) ) {$charset_collate = 'DEFAULT CHARACTER SET='.$wpdb->charset;}
+            if ( ! empty( $wpdb->collate ) ) {$charset_collate .= ' COLLATE='.$wpdb->collate;}
 
-            if ( $wpdb->get_var( 'SHOW TABLES LIKE "' . $wpdb->base_prefix.self::$table_prefix.'message'.'" ' ) != $wpdb->base_prefix.self::$table_prefix.'message' ) {
-                //create table
-                $sql = '
-                    CREATE TABLE IF NOT EXISTS `'.$wpdb->base_prefix.self::$table_prefix.'messages` (
-                        `id` int(11) NOT NULL AUTO_INCREMENT,
-                        `user_hash` varchar(10) NOT NULL DEFAULT "",
-                        `user_ip` varchar(40) NOT NULL DEFAULT "",
-                        `user_browser` varchar(255) NOT NULL DEFAULT "",
-                        `user_name` varchar(50) NOT NULL DEFAULT "",
-                        `message_text` varchar(1000) NOT NULL DEFAULT "",
-                        `message_page` varchar(255) NOT NULL DEFAULT "",
-                        `message_created` datetime DEFAULT NULL,
-                        `message_type` tinyint(1) NOT NULL DEFAULT "0" COMMENT "1 - admin, 0 - user",
-                        PRIMARY KEY (`id`)
-                    ) ENGINE=MyISAM DEFAULT CHARSET='.$charset_collate.' AUTO_INCREMENT=1
-                ;';
-                $wpdb->query( $sql );
+            //create table
+            $sql = '
+                CREATE TABLE IF NOT EXISTS `'.$wpdb->base_prefix.self::$table_prefix.'messages` (
+                    `id` int(11) NOT NULL AUTO_INCREMENT,
+                    `user_hash` varchar(10) NOT NULL DEFAULT "",
+                    `user_ip` varchar(40) NOT NULL DEFAULT "",
+                    `user_browser` varchar(255) NOT NULL DEFAULT "",
+                    `user_name` varchar(50) NOT NULL DEFAULT "",
+                    `message_text` varchar(1000) NOT NULL DEFAULT "",
+                    `message_page` varchar(255) NOT NULL DEFAULT "",
+                    `message_created` datetime DEFAULT NULL,
+                    `message_type` tinyint(1) NOT NULL DEFAULT "0" COMMENT "1 - admin, 0 - user",
+                    PRIMARY KEY (`id`)
+                ) ENGINE=MyISAM '.$charset_collate.' AUTO_INCREMENT=1
+            ;';
+            $wpdb->query( $sql );
 
-                //set options
+            //clear table
+            $sql = 'TRUNCATE TABLE `'.$wpdb->base_prefix.self::$table_prefix.'messages`';
+            $wpdb->query( $sql );
+
+            //set default options
+            $options = get_option(self::$optionParameters, array());
+            if( empty($options) ){
                 self::plugin_options('add');
-            }else{
-                //clear table
-                $sql = 'TRUNCATE TABLE `'.$wpdb->base_prefix.self::$table_prefix.'messages`';
-                $wpdb->query( $sql );
             }
 
             //add flag for redirect
@@ -734,7 +735,7 @@ if ( ! class_exists( 'LiveChats' ) ) {
         public static $siteSecureAction = 'http://secure.realtime-chat.com/from-plugin';
 
         public static $plugin_name      = 'live-chat-online';
-        public static $plugin_version   = '1.1.0';
+        public static $plugin_version   = '1.1.1';
         public static $optionKey        = 'live-chats_key'; //name for key in options
         public static $personalKey      = '';               //current key of plugin
 
