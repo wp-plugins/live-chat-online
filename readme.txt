@@ -5,7 +5,7 @@ Donate link: http://www.realtime-chat.com/donate
 URI: www.realtime-chat.com
 Tags: chat, Online, Live, Online chat, Live Chat, widget chat, online live chat, web chat, tools
 Requires at least: 3.9
-Tested up to: 4.2.2
+Tested up to: 4.2.3
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -36,7 +36,8 @@ Install it for free today and chat with website users!
 
 Is the multilingual users interface for this chat widget supported?
 
-This chat plugin (chat widget) also support multilingual users interface for visitors of your website and for chat operators.
+This chat plugin (chat widget) support multilingual users interface for visitors of your website and also support this for chat operators in your control panel at www.realtime-chat.com
+
 
 
 == Changelog ==
